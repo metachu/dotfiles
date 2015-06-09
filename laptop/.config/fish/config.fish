@@ -33,7 +33,7 @@ function fuck -d 'Correct your previous console command'
     end
 end
 
-
+set --export GOPATH ~/go
 set --export PYTHONPATH ~/projects/etl ~/projects/rtsi/rtsi ~/projects/ramis/
 set --export ENVIRONMENT development
 

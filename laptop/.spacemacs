@@ -16,6 +16,7 @@
      auto-completion
      python
      org
+	 go
      ;; --------------------------------------------------------
      ;; Example of useful layers you may want to use right away
      ;; Uncomment a layer name and press C-c C-c to install it
