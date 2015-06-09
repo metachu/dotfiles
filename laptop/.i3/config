@@ -42,7 +42,7 @@ mode $SOUNDMENU {
 	bindsym Return mode "default"
 }
 
-set $TERMMENU "[1]Regular [2]ramis [3]productionapi [4]test-pc [5]local-devel"
+set $TERMMENU "[1]Regular [2]ramis [3]productionapi [4]test-pc [5]local-devel [N]nautilus"
 bindsym $mod+t mode $TERMMENU
 mode $TERMMENU {
 	bindsym 1 exec export theme=default && gnome-terminal, mode "default"
@@ -50,6 +50,7 @@ mode $TERMMENU {
 	bindsym 3 exec export theme=api && gnome-terminal, mode "default"
 	bindsym 4 exec export theme=test-server && gnome-terminal, mode "default"
 	bindsym 5 exec export theme=local-devel && gnome-terminal, mode "default"
+	bindsym n exec nautilus --no-desktop, mode "default"
 	bindsym Escape mode "default"
 	bindsym Return mode "default"
 }
