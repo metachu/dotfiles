@@ -25,7 +25,9 @@ function fuck -d 'Correct your previous console command'
 end
 
 
-set --export PYTHONPATH ~/projects/api/etl ~/projects/api/realtime ~/projects/ramis/
+#set --export PYTHONPATH ~/projects/api/etl ~/projects/api/realtime ~/projects/ramis/
+set --export GOPATH ~/go
+set --export PYTHONPATH ~/vm/api/etl ~/vm/api/realtime ~/projects/ramis/
 set --export ENVIRONMENT development
 
 #doge --season xmas
@@ -50,3 +52,5 @@ switch $theme
 	case default 
 		sh .config/base16-shell/base16-monokai.dark.sh 
 end
+
+

@@ -20,6 +20,7 @@ exec nm-applet&
 exec_always feh --bg-scale ~/Downloads/dogecoin.jpg --bg-scale ~/Downloads/dogesuit.jpg
 exec_always sh -c 'xrandr --output VGA1 --mode 1920x1080 --rate 60.0 --output HDMI2 --mode 1280x1024 --rate 60.0 --right-of VGA1'
 exec compton -b --config ~/.config/compton.conf
+exec shutter --min_at_startup
 
 
 set $MENU "[S]hutdown    [R]eboot    Sus[P]end    [L]ock "
