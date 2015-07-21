@@ -27,8 +27,9 @@ end
 
 #set --export PYTHONPATH ~/projects/api/etl ~/projects/api/realtime ~/projects/ramis/
 set --export GOPATH ~/go
-set --export PYTHONPATH ~/vm/api/etl ~/vm/api/realtime ~/projects/ramis/
+set --export PYTHONPATH ~/vm/api/etl ~/vm/api/realtime ~/projects/ramis/ ~/projects/playground/
 set --export ENVIRONMENT development
+set --export PATH $PATH ~/go/bin
 
 #doge --season xmas
 sh .config/base16-shell/base16-monokai.dark.sh 
@@ -53,4 +54,28 @@ switch $theme
 		sh .config/base16-shell/base16-monokai.dark.sh 
 end
 
+
+
+
+#fish settings
+set -x INFORMIXDIR /opt/IBM/informix
+set -x INFORMIXSERVER prodtcpip
+
+set -x EDITOR vim
+
+
+#aliases
+alias lsa="ls -lsa"
+alias lsr="ls -lsatr"
+alias gs="git status"
+alias gp="git push"
+alias gc="git commit "
+alias ga="git add ."
+
+#aliaswindows
+function ramcheck
+	echo "checking the ram of 192.168.21."$argv[1]
+    wmic -U BRANDBANK/ITSUPPORT%Kilda_15 //192.168.21.$argv[1] "Select UserName from win32_computersystem"
+    wmic -U BRANDBANK/ITSUPPORT%Kilda_15 //192.168.21.$argv[1] "Select FreePhysicalMemory,TotalVisibleMemorySize from win32_operatingsystem"
+end
 
