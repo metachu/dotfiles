@@ -218,11 +218,13 @@ bindsym XF86Battery exec gnome-power-statistics
 #for_window [class="^.*irefox.*"] border none
 for_window [class="^.*"] border pixel 3 
 
-bindsym $mod+y gaps inner current minus 6
-bindsym $mod+u gaps inner current plus 6
-bindsym $mod+Shift+y gaps outer current minus 6
-bindsym $mod+Shift+u gaps outer current plus 6
+#bindsym $mod+y gaps inner current minus 6
+#bindsym $mod+u gaps inner current plus 6
+#bindsym $mod+Shift+y gaps outer current minus 6
+#bindsym $mod+Shift+u gaps outer current plus 6
 
 
-gaps inner 12
-smart_borders no_gaps
+#gaps inner 12
+#smart_borders no_gaps
+
+
